@@ -1,6 +1,6 @@
 # PolarClock
 
-<img src="https://github.com/stutonk/PolarClock/blob/master/screenshot.png" width="575" height="400">
+![PolarClock in action!](https://github.com/stutonk/PolarClock/blob/master/screenshot.png)
 
 This was an experiment to learn about contemporary Elm as well as programmatic
 generation of SVG animations. The goal was to reproduce something along the
