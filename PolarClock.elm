@@ -102,6 +102,8 @@ view model =
         , fill color
         ] [text content]
     
+    zeroPad n = if (n < 10) then "0" ++ (toString n) else (toString n)
+    
     date = Date.fromTime model
     
     -- Seconds
@@ -149,8 +151,8 @@ view model =
       -- Order no longer important
       , makeText 50 "#ff00ff" <| toString yr
       , makeText 75 "#4b0082" <| monthName mnt
-      , makeText 100 "blue" <| toString day
-      , makeText 125 "green" <| toString hr
-      , makeText 150 "#ffef00" <| toString min
-      , makeText 175 "orange" <| toString sec
+      , makeText 100 "blue" <| zeroPad day
+      , makeText 125 "green" <| zeroPad hr
+      , makeText 150 "#ffef00" <| zeroPad min
+      , makeText 175 "orange" <| zeroPad sec
       ]
